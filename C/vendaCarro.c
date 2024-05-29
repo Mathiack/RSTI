@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//NÃO TERMINADO
 int main() {
     float valorCusto, valImpostoPer = 0.45, valDistribuidoraPer = 0.12;
     float valorImp, valorDist, valorFinal;
