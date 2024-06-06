@@ -1,14 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    int n, cont=1;
+    float nota1, nota2, nota3, media;
     
-    printf("N:");
-    scanf("%d", &n);
+    printf("Nota1: ");
+    scanf("%f", &nota1);
+    printf("Nota2: ");
+    scanf("%f", &nota2);
+    printf("Nota3: ");
+    scanf("%f", &nota3);
     
-    while (cont < n) {
-        printf("%i\n", cont);
-        cont++;
+    media = (nota1 + nota2 + nota3) / 3;
+    
+    printf("A media é: %f", media);
+    
+    if (media >= 6) {
+        char string[100] = "\nAprovado";
+        printf("%s", string);
+    } else {
+        char string[100] = "\nReprovado";
+        printf("%s", string);
     }
+    
     return 0;
 }

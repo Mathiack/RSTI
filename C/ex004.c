@@ -1,26 +1,32 @@
 #include <stdio.h>
 
 int main() {
-    float nota1, nota2, nota3, media;
+    int num1, num3;
+    float num2;
     
-    printf("Nota1: ");
-    scanf("%f", &nota1);
-    printf("Nota2: ");
-    scanf("%f", &nota2);
-    printf("Nota3: ");
-    scanf("%f", &nota3);
-    
-    media = (nota1 + nota2 + nota3) / 3;
-    
-    printf("A media é: %f", media);
-    
-    if (media >= 6) {
-        char string[100] = "\nAprovado";
-        printf("%s", string);
+    printf("Num1:");
+    scanf("%i", &num1);
+    printf("Num2:");
+    scanf("%i", &num2);
+    printf("Num3:");
+    scanf("%i", &num3);
+    printf("------------\n");
+    if (num1 > 0) {
+        printf("Num1: Positivo\n");
+    } else if (num1 < 0) {
+        printf("Num1: Negativo\n");
     } else {
-        char string[100] = "\nReprovado";
-        printf("%s", string);
+        printf("\nNum1: Zero\n");
     }
+    printf("------------\n");
+    if (num2 < 10) {
+        printf("Num2: Menor que 10\n");
+    } else if (num2 > 10) {
+        printf("Num2: Maior que 10\n");
+    }
+    printf("------------\n");
+    printf("Num 3: %i\n", num3);
+    printf("------------\n");
     
     return 0;
 }

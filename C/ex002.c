@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int nota;
+    int num;
     
-    printf("Nota:");
-    scanf("%i", &nota);
+    printf("Número:");
+    scanf("%i", &num);
     
-    if (nota >= 60) {
-        printf("Passou.");
+    if (num > 0) {
+        printf("Positivo");
+    } else if (num < 0) {
+        printf("Negativo");
     } else {
-        printf("Reprovado.");
+        printf("Zero");
     }
     return 0;
 }

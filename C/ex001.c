@@ -2,16 +2,21 @@
 
 int main() {
     int num;
+    float n; 
+    char string[100];
     
-    printf("Número:");
-    scanf("%i", &num);
+    printf("Int:");
+    scanf("%d", &num);
     
-    if (num > 0) {
-        printf("Positivo");
-    } else if (num < 0) {
-        printf("Negativo");
-    } else {
-        printf("Zero");
-    }
+    printf("Float:");
+    scanf("%f", &n);
+    
+    printf("String:");
+    scanf("%s", &string);
+    
+    printf("\nInt: %d", num);
+    printf("\nFloat: %f", n);
+    printf("\nString: %s", string);
+    
     return 0;
 }
