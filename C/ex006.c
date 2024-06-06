@@ -10,5 +10,6 @@ int main() {
         printf("%i\n", cont);
         cont++;
     }
+    printf("%d", n);
     return 0;
 }
