@@ -1,4 +1,3 @@
-//NÃO TERMINADO
 #include <stdio.h>
 
 int main() {
@@ -7,9 +6,8 @@ int main() {
     printf("N:");
     scanf("%d", &n);
     
-    while (cont <= n) {
+    for (int cont = 1; cont <= n; cont++) {
         soma += cont;
-        cont++;
     }
     printf("%d\n", soma);
     return 0;
