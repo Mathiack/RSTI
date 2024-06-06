@@ -1,4 +1,3 @@
-//NÃO TERMINADO
 #include <stdio.h>
 
 int main() {
