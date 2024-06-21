@@ -15,11 +15,12 @@
 		$n3 = $_POST['n3'];
 		$pn3 = $_POST['pn3'];
 
-		$media = 
+		$media = (($n1 * $pn1) + ($n2 + $pn2) + ($n3 + $pn3)) / ($pn1 + $pn2 + $pn3);
+
 	?>
 </head>
 <body>
-	<?php
-	?>
+	<p>Nome: <?php $nome?></p>
+	<p>Media: <?php $media?></p>
 </body>
 </html>
