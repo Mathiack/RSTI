@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #bdbdbd;
     font-family: monospace;
@@ -33,4 +34,41 @@ a {
 }
 p {
     font-size: 12pt;
+=======
+body {
+    background-color: #bdbdbd;
+    font-family: monospace;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #0d373d;
+}
+.div {
+    padding: 100px;
+    text-align: justify;
+    border-radius: 100px;
+    box-shadow: 10px 10px 25px 20px #888888;
+    background-image: url('../images/pedra.jpg');
+
+}
+.div2 {
+    background-color: rgb(201, 201, 201);
+    text-align: justify;
+    border-radius: 20px;
+    padding: 10px;
+}
+a {
+    background-color: rgb(201, 201, 201);
+    text-align: justify;
+    border-radius: 20px;
+    padding: 10px;
+}
+.mand {
+    color: #0d373d;
+    background-color: #bdbdbd;
+    padding: 20px;
+    border-radius: 20px;
+}
+p {
+    font-size: 12pt;
+>>>>>>> 4b086c598fe97b57f3023166b957e0412b73d72a
 }

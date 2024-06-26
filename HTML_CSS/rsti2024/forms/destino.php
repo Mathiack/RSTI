@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,3 +23,8 @@
 	<p>Msg: <?php echo $msg . "<br>";?></p>
 </body>
 </html>
+=======
+<?php
+
+?>
+>>>>>>> 4b086c598fe97b57f3023166b957e0412b73d72a
