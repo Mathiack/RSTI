@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<section id="centro">
+			<form action="destino.php" method="post">
+				<div id="nome">
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome" required>
+					<br>
+				</div>
+				<div id="email">
+					<label for="nome">E-mail:</label>
+					<input type="text" name="email" id="email" required>
+					<br>
+				</div>
+				<div id="idade">
+					<label for="nome">Idade:</label>
+					<input type="text" name="idade" id="idade" required>
+					<br>
+				</div>
+
+				<div id="cidades">
+					<label for="cidade">Cidade:</label>
+					<select name="cidade" id="cidade">
+						<option value="SP">São-Paulo</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="BH">Belo Horizonte</option>
+						<option value="BR">Brasília</option>
+					</select>
+					<br>
+				</div>
+
+				<div id="msg">
+					<label for="msg">Mensagem</label>
+					<textarea for="msg" id="msg" name="msg">Manda Bala</textarea>
+				</div>
+
+				<div id="submit">
+					<input type="submit" name="submit">
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
