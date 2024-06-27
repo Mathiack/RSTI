@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
-    <link rel="stylesheet" href="../Estilo/style.css">
     <style>
-        div#divProgramar > img#programar {
-            width: 200px;
+        #galeria {
+            background-color: rgb(173, 173, 173);
+            padding: 10px;
+            color: black;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+        section#imgs {
+            background-color: lightgray;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        section#imgs > div#tdsIMGS {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer#botLeftVolt {
+            bottom: 10px;
+            left: 10px;
+        }
+        footer#botLeftVolt > a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div id="divProgramar">
-        <img src="../img/programar.jpg" alt="programar" id="programarIMG" width="200px">
-    </div>
-    <img src="../img/downhill.jpg" alt="downhill" id="downhillIMG" width="200px">
+    <section id="galeria">
+        <h1>Galeria</h1>
+    </section>
+    <section id="imgs">
+        <div id="tdsIMGS">
+            <div id="divProgramar">
+                <img src="../img/programar.jpg" alt="programar" id="programarIMG" width="200px" height="100px">
+            </div>
+            <div id="divDownhill">
+                <img src="../img/downhill.jpg" alt="downhill" id="downhillIMG" width="100px">
+            </div>
+        </div>
+    </section>
+    <footer id="botLeftVolt">
+        <a href="index.html">Voltar</a>
+    </footer>
 </body>
 </html>
 <!--
