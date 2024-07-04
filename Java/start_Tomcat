@@ -1,0 +1,11 @@
+C: \ Users \ Seu User > cd..
+
+C: \ Users > cd..
+
+C: > cd..
+
+C: > cd ap         *de um TAB, que vai aparecer " apache-tomcat-10.1.24 "
+
+C: \ apache-tomcat-10.1.24 > cd bin
+
+C: \ apache-tomcat-10.1.24 \ bin > startup .bat
