@@ -1,20 +1,12 @@
-- README
-- ME LEIA
-- LEES MY
-- liyt’apxita
-- LIYT'APXITA
-- διάβασε με
-- karanta ni
-- rid mi
-- என்னை தெரிந்து கொள்
-- vakio aho
-- ndiverenge
-- ngifunde
-- baca saya
-- aqrani
-- อ่านฉัน
-- maca kula
-- leghje mi
-- gụọ m
-اقرأني- 
-- կարդա ինձ
+# RSTI 2024
+## Conhecimentos
+
+### Lógica de Programação
+<br>
+
+### Introdução à Programação
+Introdução ào mundo da Programação com Portugol e <a href="https://github.com/Guilherme-Thunder/RSTI/tree/main/C">Linguagem C</a>
+<br>
+
+### Desenvolvimento Web
+Começando a desenvolver <a href="">páginas Web</a> com HTML, CSS e auxílio de PHP
