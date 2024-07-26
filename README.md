@@ -1,5 +1,7 @@
 # RSTI 2024🖥️
 ## Conhecimentos Envolvidos🧠
+Curso básico de iniciação ao mundo da programação, com Lógica de Programação, HTML e CSS, e Java Back-End
+<br><br>
 
 ### Lógica de Programação🧮
 Iniciando com Exercícios de Lógica de Programação para entender como funciona um código.
