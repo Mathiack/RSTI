@@ -1,7 +1,12 @@
 # RSTI 2024🖥️
+
+
 ## Conhecimentos Envolvidos🧠
 Curso básico de iniciação ao mundo da programação, com Lógica de Programação, HTML e CSS, e Java Back-End
 <br><br>
+
+## RSTI - 2024_1
+###### 08/05 - 04/09
 
 ### Lógica de Programação🧮
 Iniciando com Exercícios de Lógica de Programação para entender como funciona um código.
@@ -17,3 +22,6 @@ Começando a desenvolver <a href="">páginas Web</a> com HTML, CSS e auxílio de
 
 ### Java Back-End☕
 Usando <a href="https://github.com/Guilherme-Thunder/RSTI/tree/main/Java">Java</a> em Web com o Tomcat para criar páginas HTML funcionais.
+
+## RSTI - 2024_2
+###### 05/09 - 21/12
