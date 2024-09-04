@@ -17,11 +17,11 @@ Introdução ào mundo da Programação com Portugol e <a href="https://github.c
 <br><br>
 
 ### Desenvolvimento Web📶
-Começando a desenvolver <a href="https://github.com/Mathiack/RSTI_1/tree/main/RSTI_1/HTML_CSS">páginas Web</a> com HTML, CSS e auxílio de PHP.
+Começando a desenvolver <a href="https://github.com/Mathiack/RSTI/tree/main/RSTI_1/HTML_CSS">páginas Web</a> com HTML, CSS e auxílio de PHP.
 <br><br>
 
 ### Java Back-End☕
-Usando <a href="https://github.com/Guilherme-Thunder/RSTI_1/tree/main/RSTI_1/Java">Java</a> em Web com o Tomcat para criar páginas HTML funcionais.
+Usando <a href="https://github.com/Guilherme-Thunder/RSTI/tree/main/RSTI_1/Java">Java</a> em Web com o Tomcat para criar páginas HTML funcionais.
 
 ## RSTI - 2024_2
 ###### 05/09 - 21/12
