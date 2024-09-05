@@ -26,6 +26,6 @@ Usando <a href="https://github.com/Guilherme-Thunder/RSTI/tree/main/RSTI_1/Java"
 ## RSTI - 2024_2
 ###### 05/09 - 21/12
 
-### Lógica de Programação
-### Desenvolvimento Web Front-End
-### JavaScript
+### Lógica de Programação🧠
+### Desenvolvimento Web Front-End ⚙
+### JavaScript🔧
