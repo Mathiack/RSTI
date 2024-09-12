@@ -9,6 +9,6 @@ programa {
 
     real soma = a + b
 
-    escreva("Tua soma é " + soma)
+    escreva("Tua soma e " + soma)
   }
 }
