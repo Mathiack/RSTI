@@ -13,7 +13,7 @@ programa { // não está mostrando a resposta
     se(op == "soma" ou "+") {
       escreva(soma(a, b))
     } senao se(op == "subtracao" ou "-") {
-      escreva(sub(a, ba))
+      escreva(sub(a, b))
     } senao se(op == "multiplicacao" ou "*") {
       escreva(multi(a, b))
     } senao se(op == "divisao" ou "/") {
