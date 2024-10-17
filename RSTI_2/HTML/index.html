@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site Simples com Bootstrap</title>
+    <title>Site Simples com Modo Escuro</title>
     <!-- Bootstrap CSS via CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos para o modo claro (padrão) */
+        body.light-mode {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Estilos para o modo escuro */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Navbar no modo escuro */
+        .navbar.dark-mode {
+            background-color: #333;
+        }
+
+        /* Jumbotron no modo escuro */
+        .jumbotron.dark-mode {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        /* Ajuste para os cards no modo escuro */
+        .card.dark-mode {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        /* Ajuste para o rodapé no modo escuro */
+        footer.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 
-<body>
+<body class="light-mode">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,6 +70,11 @@
                     <a class="nav-link" href="#">Contato</a>
                 </li>
             </ul>
+            <!-- Checkbox para Modo Escuro -->
+            <div class="form-inline">
+                <input type="checkbox" id="darkModeToggle" class="ml-3">
+                <label for="darkModeToggle" class="ml-2">Modo Escuro</label>
+            </div>
         </div>
     </nav>
 
@@ -89,6 +130,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript para alternar entre modo claro e modo escuro -->
+    <script>
+        // Selecionar o checkbox e adicionar um evento 'change'
+        const toggle = document.getElementById('darkModeToggle');
+        toggle.addEventListener('change', function () {
+            // Alternar a classe 'dark-mode' no body
+            document.body.classList.toggle('dark-mode');
+            
+            // Alternar a classe 'dark-mode' em componentes específicos
+            document.querySelector('.navbar').classList.toggle('dark-mode');
+            document.querySelector('.jumbotron').classList.toggle('dark-mode');
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.toggle('dark-mode');
+            });
+            document.querySelector('footer').classList.toggle('dark-mode');
+        });
+    </script>
+
 </body>
 
 </html>
