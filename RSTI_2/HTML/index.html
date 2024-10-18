@@ -15,15 +15,38 @@
             color: #000;
         }
 
+        .navbar.light-mode, footer.light-mode {
+            background-color: #f8f9fa;
+            color: #000;
+        }
+
+        .navbar.light-mode .nav-link, footer.light-mode {
+            color: #000;
+        }
+
+        /* Mudar cor do texto "Meu Site" no modo claro */
+        .navbar.light-mode .navbar-brand {
+            color: #000;
+        }
+
         /* Estilos para o modo escuro */
         body.dark-mode {
             background-color: #121212;
             color: #e0e0e0;
         }
 
-        /* Navbar no modo escuro */
-        .navbar.dark-mode {
-            background-color: #333;
+        .navbar.dark-mode, footer.dark-mode {
+            background-color: #333 !important; /* Sobrescrever bg-light */
+            color: #fff;
+        }
+
+        .navbar.dark-mode .nav-link, footer.dark-mode {
+            color: #fff !important; /* Sobrescrever o texto da navbar e do rodapé */
+        }
+
+        /* Mudar cor do texto "Meu Site" no modo escuro */
+        .navbar.dark-mode .navbar-brand {
+            color: #fff !important; /* Garantir que a marca fique branca no modo escuro */
         }
 
         /* Jumbotron no modo escuro */
@@ -35,12 +58,6 @@
         /* Ajuste para os cards no modo escuro */
         .card.dark-mode {
             background-color: #1e1e1e;
-            color: #fff;
-        }
-
-        /* Ajuste para o rodapé no modo escuro */
-        footer.dark-mode {
-            background-color: #333;
             color: #fff;
         }
     </style>
@@ -138,14 +155,17 @@
         toggle.addEventListener('change', function () {
             // Alternar a classe 'dark-mode' no body
             document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
             
             // Alternar a classe 'dark-mode' em componentes específicos
             document.querySelector('.navbar').classList.toggle('dark-mode');
+            document.querySelector('.navbar').classList.toggle('light-mode');
             document.querySelector('.jumbotron').classList.toggle('dark-mode');
             document.querySelectorAll('.card').forEach(card => {
                 card.classList.toggle('dark-mode');
             });
             document.querySelector('footer').classList.toggle('dark-mode');
+            document.querySelector('footer').classList.toggle('light-mode');
         });
     </script>
 
