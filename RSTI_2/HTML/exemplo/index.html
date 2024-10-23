@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        header {
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        img.align-right {
+            float: right;
+            margin-left: 20px;
+        }
+        .hobbies-list, .daily-routine {
+            margin-left: 20px;
+        }
+        .hobbies-list li, .daily-routine li {
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="https://www.senac.br" target="_blank">Senac</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Guilherme, e eu adoro <strong>estudar</strong> e praticar <em>esportes</em>.</p>
+        <img src="imgs/foto.jfif" alt="Imagem de perfil de Guilherme" width="200" class="align-right" />
+    </section>
+    <section id="hobbies">
+        <h3>Meus Hobbies</h3>
+        <ul class="hobbies-list">
+            <li>Jogar Handebol</li>
+            <li>Bike</li>
+            <li>Correr</li>
+            <li>Estudar</li>
+        </ul>
+    </section>
+    <section id="servicos">
+        <h3>Meus Serviços</h3>
+        <!-- Adicione aqui os detalhes dos seus serviços -->
+    </section>
+    <section id="contato">
+        <h3>Contate-me</h3>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <input type="email" name="email" placeholder="Seu email" required>
+            <textarea name="message" placeholder="Sua mensagem" rows="4" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Veja o perfil de <a href="https://github.com/Mathiack" target="_blank">Mathiack no GitHub</a>.</p>
+        <div class="flex-container">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Mathiack&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=false&order=2" height="150" alt="languagesgraph"/>
+        </div>
+    </section>
+    <footer>
+        <p><a href="mailto:seuemail@dominio.com">Entre em contato por e-mail</a></p>
+    </footer>
+</body>
+</html>
