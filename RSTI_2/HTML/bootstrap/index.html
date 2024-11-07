@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página com Bootstrap</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar (Barra de Navegação) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Meu Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner com Texto Centralizado -->
+    <div class="jumbotron text-center" id="home">
+        <h1 class="display-4">Bem-vindo ao Meu Site!</h1>
+        <p class="lead">Este é um exemplo de página usando Bootstrap.</p>
+        <a class="btn btn-primary btn-lg" href="#sobre" role="button">Saiba Mais</a>
+    </div>
+
+    <!-- Seção Sobre Nós -->
+    <section class="container my-5" id="sobre">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500" class="img-fluid rounded" alt="Imagem de exemplo">
+            </div>
+            <div class="col-md-6">
+                <h2>Sobre Nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat nunc vel urna interdum, nec ultricies turpis feugiat.</p>
+                <a href="#contato" class="btn btn-outline-secondary">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="container my-5" id="servicos">
+        <h2 class="text-center mb-4">Nossos Serviços</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Serviço 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Serviço 1</h5>
+                        <p class="card-text">Descrição breve do serviço oferecido.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Serviço 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Serviço 2</h5>
+                        <p class="card-text">Descrição breve do serviço oferecido.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Serviço 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Serviço 3</h5>
+                        <p class="card-text">Descrição breve do serviço oferecido.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="container my-5" id="contato">
+        <h2 class="text-center mb-4">Contato</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
