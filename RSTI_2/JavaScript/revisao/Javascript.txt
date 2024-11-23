@@ -1,0 +1,31 @@
+Perguntas Gerais 
+
+1. Qual a principal aplicabilidade da linguagem JavaScript no desenvolvimento web? 
+JavaScript é essencial para adicionar interatividade e dinamismo aos sites.
+
+2. O que significa ECMA e qual a relação com JavaScript? 
+ECMA (European Computer Manufacturers Association) é uma organização que define padrões. JavaScript é padronizado pela especificação ECMAScript, garantindo interoperabilidade entre diferentes navegadores.
+
+3. Cite exemplos de interatividade que o JavaScript pode adicionar a um site. 
+JavaScript pode adicionar formulários interativos, animações, menus dropdown, carrosséis de imagens, e validação de entrada de dados em tempo real.
+
+4. Quais são os três tipos primitivos básicos de dados em JavaScript? 
+São number, string e boolean.
+
+5. Como JavaScript realiza entrada, processamento e saída de dados? 
+Ele coleta dados de entrada de usuários através de formulários ou eventos, processa esses dados, e exibe saídas usando a manipulação do DOM ou alertas.
+
+6. O que é a sintaxe de JavaScript e quais são seus componentes básicos? 
+A sintaxe de JavaScript inclui palavras-chave, operadores, expressões, e instruções. Componentes básicos são variáveis, funções, loops e condicionais.
+
+7. Qual é a diferença entre as palavras-chave var, let e const? 
+var tem escopo de função e pode ser redeclarada. let tem escopo de bloco e não pode ser redeclarada. const também tem escopo de bloco e é usada para definir constantes.
+
+8. O que é o processamento de dados em JavaScript? 
+Envolve operações sobre dados de entrada para gerar uma saída, usando operações aritméticas, lógicas e de string, entre outras.
+
+9. Explique o conceito de saída de dados em JavaScript com um exemplo. 
+Exemplos de saída de dados incluem escrever no documento HTML (document.write), atualizar elementos do DOM (document.getElementById().innerHTML), ou mostrar mensagens de alerta (alert).
+
+10. Qual é a importância de JavaScript no mercado atual? 
+JavaScript é vital no desenvolvimento web moderno, sendo a linguagem principal para criar interfaces de usuário interativas, aplicações web dinâmicas e frameworks populares como React e Angular
