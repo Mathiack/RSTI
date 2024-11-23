@@ -1,0 +1,27 @@
+Revisão das últimas aulas 
+
+1. Declare duas variáveis e troque os valores entre elas. 
+
+2. Crie um array com 5 números e: 
+
+3. Crie um programa que receba um número e exiba uma mensagem diferente para cada faixa de valores usando switch. 
+
+5. Use if..else para verificar se uma palavra começa com uma letra maiúscula. 
+
+6. Crie um programa que use try..catch para tratar o erro de divisão por zero. 
+
+7. Implemente um programa que percorra um array de números usando for, while e do..while. 
+
+8. Crie um objeto com as propriedades nome, idade e profissao. 
+
+9. Escreva um programa que percorra os números de 1 a 50 e:10. Crie um evento no console que dispara uma função personalizada ao pressionar a tecla Enter. 
+
+11. Declare um array de nomes e use join() para transformá-lo em uma string. 
+
+12. Escreva uma função que recebe um número e lança uma exceção (throw) se o número for negativo. 
+
+13. Crie um programa que verifique se uma string é um palíndromo (lê-se igual de trás para frente). 
+
+14. Crie um objeto calculadora com métodos para somar, subtrair, multiplicar e dividir dois números. 
+
+15. Use um loop for para criar um tabuleiro de xadrez no console. 
