@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+    }
+    button {
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f9f9;
+    }
+    li.concluido {
+      text-decoration: line-through;
+      color: gray;
+      background-color: #e0e0e0;
+    }
+    .buttons {
+      display: flex;
+      gap: 5px;
+    }
+    .editando {
+      border: 1px solid #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Tarefas</h1>
+  <input id="tarefaInput" type="text" placeholder="Digite uma tarefa" />
+  <button id="adicionarBtn">Adicionar</button>
+  <button id="limparBtn">Limpar Lista</button>
+  <button id="ordenarBtn">Ordenar por Status</button>
+  <ul id="listaTarefas"></ul>
+
+  <script>
+    const inputTarefa = document.getElementById('tarefaInput');
+    const botaoAdicionar = document.getElementById('adicionarBtn');
+    const botaoLimpar = document.getElementById('limparBtn');
+    const botaoOrdenar = document.getElementById('ordenarBtn');
+    const listaTarefas = document.getElementById('listaTarefas');
+
+    // Carregar tarefas do localStorage ao inicializar
+    const tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
+
+    const salvarTarefas = () => {
+      localStorage.setItem('tarefas', JSON.stringify(tarefas));
+    };
+
+    const criarTarefaDOM = (tarefa) => {
+      const li = document.createElement('li');
+      li.textContent = tarefa.texto;
+      li.classList.toggle('concluido', tarefa.concluido);
+
+      // Botões de ação
+      const buttonsDiv = document.createElement('div');
+      buttonsDiv.classList.add('buttons');
+
+      // Botão Concluir
+      const botaoConcluir = document.createElement('button');
+      botaoConcluir.textContent = 'Concluir';
+      botaoConcluir.addEventListener('click', () => {
+        tarefa.concluido = !tarefa.concluido;
+        li.classList.toggle('concluido', tarefa.concluido);
+        salvarTarefas();
+      });
+
+      // Botão Remover
+      const botaoRemover = document.createElement('button');
+      botaoRemover.textContent = 'Remover';
+      botaoRemover.addEventListener('click', () => {
+        const index = tarefas.indexOf(tarefa);
+        tarefas.splice(index, 1);
+        salvarTarefas();
+        listaTarefas.removeChild(li);
+      });
+
+      // Botão Editar
+      const botaoEditar = document.createElement('button');
+      botaoEditar.textContent = 'Editar';
+      botaoEditar.addEventListener('click', () => {
+        const novoTexto = prompt('Edite sua tarefa:', tarefa.texto);
+        if (novoTexto !== null) {
+          tarefa.texto = novoTexto.trim() || tarefa.texto;
+          li.textContent = tarefa.texto;
+          li.appendChild(buttonsDiv);
+          salvarTarefas();
+        }
+      });
+
+      buttonsDiv.appendChild(botaoConcluir);
+      buttonsDiv.appendChild(botaoRemover);
+      buttonsDiv.appendChild(botaoEditar);
+      li.appendChild(buttonsDiv);
+      listaTarefas.appendChild(li);
+    };
+
+    const renderizarTarefas = () => {
+      listaTarefas.innerHTML = '';
+      tarefas.forEach(criarTarefaDOM);
+    };
+
+    botaoAdicionar.addEventListener('click', () => {
+      const tarefaTexto = inputTarefa.value.trim();
+      if (tarefaTexto === '') {
+        alert('Digite uma tarefa válida!');
+        return;
+      }
+
+      const novaTarefa = { texto: tarefaTexto, concluido: false };
+      tarefas.push(novaTarefa);
+      salvarTarefas();
+      criarTarefaDOM(novaTarefa);
+      inputTarefa.value = '';
+    });
+
+    botaoLimpar.addEventListener('click', () => {
+      if (confirm('Tem certeza que deseja limpar todas as tarefas?')) {
+        tarefas.length = 0;
+        salvarTarefas();
+        renderizarTarefas();
+      }
+    });
+
+    botaoOrdenar.addEventListener('click', () => {
+      tarefas.sort((a, b) => a.concluido - b.concluido);
+      salvarTarefas();
+      renderizarTarefas();
+    });
+
+    renderizarTarefas();
+  </script>
+</body>
+</html>
