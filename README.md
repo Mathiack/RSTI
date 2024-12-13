@@ -41,3 +41,6 @@ Desenvolvimento básico com <a href="https://github.com/Mathiack/RSTI/tree/main/
 
 ### JavaScript🔧
 Contato com <a href="https://github.com/Mathiack/RSTI/tree/main/RSTI_2/JavaScript">JavaScript</a> no terminal e integrado à sites.
+
+### Turismo Erechim🌎
+Site feito em Worpress no modulo de Desenvolvimento Web. Contém informações sobre a cultura, pontos turisticos e história de Erechim
