@@ -1,0 +1,29 @@
+1. Crie dois botões: um para incrementar e outro para decrementar um número exibido em um elemento HTML. 
+
+2. Crie um botão que, ao ser clicado, alterna a cor de fundo entre duas cores predefinidas. 
+
+3. Crie um formulário que solicita nome, email e senha. Valide se os campos estão preenchidos antes de enviar. 
+
+4. Implemente uma lista de tarefas simples com as opções de adicionar e remover itens. 
+
+5. Crie uma calculadora simples que permita realizar operações de soma, subtração, multiplicação e divisão. Os números e a operação devem ser escolhidos pelo usuário. 
+
+6. Crie um array de objetos representando produtos. Implemente uma função que filtre produtos por preço mínimo fornecido pelo usuário. 
+
+7. Crie um jogo onde o usuário precisa adivinhar um número aleatório entre 1 e 100. Forneça feedback se o número for maior ou menor até que o usuário acerte. 
+
+8. Crie um botão que altera a cor de fundo de um elemento para uma cor aleatória ao ser clicado. 
+
+9. Crie um script que exiba os dados de um usuário da API https://jsonplaceholder.typicode.com/users/1. Exiba nome, email e endereço no HTML. 
+
+10. Solicite um número ao usuário e valide se ele é par ou ímpar. Mostre o resultado em um elemento HTML. 
+
+11. Crie um formulário que permite ao usuário inserir valores em um array. Após clicar em um botão, exiba a soma de todos os valores no array. 
+
+12. Permita que o usuário insira vários números em um array. Exiba os números ordenados de forma crescente e decrescente. 
+
+13. Peça ao usuário para criar um objeto representando uma pessoa com nome, idade e cidade. Exiba os dados desse objeto em um elemento HTML. 
+
+14. Faça uma requisição para uma URL inexistente e implemente um tratamento de erro para exibir uma mensagem ao usuário caso ocorra falha. 
+
+15. Crie um formulário onde o usuário pode inserir uma temperatura em Celsius. Após clicar em um botão, converta e exiba o valor em Fahrenheit e Kelvin. 

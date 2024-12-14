@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Temperatura</title>
+    <script>
+        function converterTemperatura() {
+            const celsius = parseFloat(document.getElementById('celsius').value);
+            if (isNaN(celsius)) {
+                alert('Por favor, insira um valor válido para Celsius!');
+                return;
+            }
+
+            const fahrenheit = (celsius * 9/5) + 32;
+            const kelvin = celsius + 273.15;
+
+            document.getElementById('resultadoFahrenheit').textContent = `Fahrenheit: ${fahrenheit.toFixed(2)} °F`;
+            document.getElementById('resultadoKelvin').textContent = `Kelvin: ${kelvin.toFixed(2)} K`;
+        }
+    </script>
+</head>
+<body>
+    <h2>Conversão de Temperatura</h2>
+    <label for="celsius">Temperatura em Celsius:</label>
+    <input type="number" id="celsius"><br><br>
+
+    <button onclick="converterTemperatura()">Converter</button><br><br>
+
+    <p id="resultadoFahrenheit"></p>
+    <p id="resultadoKelvin"></p>
+</body>
+</html>

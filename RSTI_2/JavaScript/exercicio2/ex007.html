@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <script>
+        let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+        let tentativas = 0;
+
+        function verificarNumero() {
+            const numeroUsuario = parseInt(document.getElementById('numero').value);
+            const feedback = document.getElementById('feedback');
+            tentativas++;
+
+            if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 100) {
+                feedback.textContent = 'Por favor, insira um número entre 1 e 100.';
+                feedback.style.color = 'red';
+            } else if (numeroUsuario < numeroAleatorio) {
+                feedback.textContent = 'O número é maior! Tente novamente.';
+                feedback.style.color = 'blue';
+            } else if (numeroUsuario > numeroAleatorio) {
+                feedback.textContent = 'O número é menor! Tente novamente.';
+                feedback.style.color = 'blue';
+            } else {
+                feedback.textContent = `Parabéns! Você acertou o número em ${tentativas} tentativas.`;
+                feedback.style.color = 'green';
+                document.getElementById('botao').disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Jogo da Adivinhação</h2>
+    <p>Digite um número entre 1 e 100:</p>
+    <input type="number" id="numero" min="1" max="100">
+    <button id="botao" onclick="verificarNumero()">Adivinhar</button>
+    <p id="feedback"></p>
+</body>
+</html>

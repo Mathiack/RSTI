@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternar Cor de Fundo</title>
+    <script>
+        let corAtual = true; // Variável para controlar a cor de fundo
+
+        function alternarCor() {
+            if (corAtual) {
+                document.body.style.backgroundColor = 'lightblue'; // Primeira cor
+            } else {
+                document.body.style.backgroundColor = 'lightgreen'; // Segunda cor
+            }
+            corAtual = !corAtual; // Alterna entre true e false
+        }
+    </script>
+</head>
+<body>
+    <button onclick="alternarCor()">Alternar Cor de Fundo</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor de Fundo Aleatória</title>
+    <script>
+        function gerarCorAleatoria() {
+            const corAleatoria = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById('elemento').style.backgroundColor = corAleatoria;
+        }
+    </script>
+</head>
+<body>
+    <h2>Alterar Cor de Fundo Aleatória</h2>
+    <div id="elemento" style="width: 300px; height: 200px; border: 1px solid #000;">
+        <p>Conteúdo do elemento</p>
+    </div>
+    <br>
+    <button onclick="gerarCorAleatoria()">Alterar Cor de Fundo</button>
+</body>
+</html>

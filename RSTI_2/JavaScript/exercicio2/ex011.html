@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar Valores do Array</title>
+    <script>
+        let valores = [];
+
+        function adicionarValor() {
+            const valor = parseFloat(document.getElementById('valor').value);
+            if (isNaN(valor)) {
+                alert('Por favor, insira um valor numérico válido!');
+                return;
+            }
+            valores.push(valor);
+            document.getElementById('valor').value = ''; // Limpar campo de entrada
+            document.getElementById('valoresArray').textContent = 'Valores no Array: ' + valores.join(', ');
+        }
+
+        function somarValores() {
+            const soma = valores.reduce((acc, val) => acc + val, 0);
+            document.getElementById('resultado').textContent = 'Soma dos valores: ' + soma;
+        }
+    </script>
+</head>
+<body>
+    <h2>Inserir Valores e Somar</h2>
+    <label for="valor">Digite um valor:</label>
+    <input type="number" id="valor">
+    <button onclick="adicionarValor()">Adicionar</button><br><br>
+
+    <p id="valoresArray">Valores no Array: </p>
+    <button onclick="somarValores()">Somar Valores</button><br><br>
+
+    <p id="resultado"></p>
+</body>
+</html>

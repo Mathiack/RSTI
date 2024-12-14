@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <script>
+        function calcular() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operacao = document.getElementById('operacao').value;
+            let resultado;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert('Por favor, insira números válidos!');
+                return;
+            }
+
+            switch (operacao) {
+                case 'soma':
+                    resultado = num1 + num2;
+                    break;
+                case 'subtracao':
+                    resultado = num1 - num2;
+                    break;
+                case 'multiplicacao':
+                    resultado = num1 * num2;
+                    break;
+                case 'divisao':
+                    if (num2 === 0) {
+                        alert('Não é possível dividir por zero!');
+                        return;
+                    }
+                    resultado = num1 / num2;
+                    break;
+                default:
+                    alert('Selecione uma operação válida!');
+                    return;
+            }
+
+            document.getElementById('resultado').textContent = 'Resultado: ' + resultado;
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculadora Simples</h2>
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" required><br><br>
+
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" required><br><br>
+
+    <label for="operacao">Operação:</label>
+    <select id="operacao">
+        <option value="soma">Soma</option>
+        <option value="subtracao">Subtração</option>
+        <option value="multiplicacao">Multiplicação</option>
+        <option value="divisao">Divisão</option>
+    </select><br><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+</body>
+</html>

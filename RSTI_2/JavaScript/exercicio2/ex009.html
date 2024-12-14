@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Dados do Usuário</title>
+    <script>
+        window.onload = function() {
+            fetch('https://jsonplaceholder.typicode.com/users/1')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('nome').textContent = 'Nome: ' + data.name;
+                    document.getElementById('email').textContent = 'Email: ' + data.email;
+                    document.getElementById('endereco').textContent = 'Endereço: ' + data.address.street + ', ' + data.address.city;
+                })
+                .catch(error => console.error('Erro ao carregar os dados:', error));
+        }
+    </script>
+</head>
+<body>
+    <h2>Dados do Usuário</h2>
+    <p id="nome"></p>
+    <p id="email"></p>
+    <p id="endereco"></p>
+</body>
+</html>

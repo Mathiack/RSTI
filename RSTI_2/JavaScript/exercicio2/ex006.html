@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Produtos</title>
+    <script>
+        const produtos = [
+            { nome: 'Produto A', preco: 50 },
+            { nome: 'Produto B', preco: 150 },
+            { nome: 'Produto C', preco: 200 },
+            { nome: 'Produto D', preco: 30 },
+            { nome: 'Produto E', preco: 120 }
+        ];
+
+        function filtrarProdutos() {
+            const precoMinimo = parseFloat(document.getElementById('precoMinimo').value);
+            if (isNaN(precoMinimo)) {
+                alert('Por favor, insira um valor válido para o preço mínimo!');
+                return;
+            }
+
+            const produtosFiltrados = produtos.filter(produto => produto.preco >= precoMinimo);
+            const listaProdutos = document.getElementById('listaProdutos');
+            listaProdutos.innerHTML = ''; // Limpar lista anterior
+
+            if (produtosFiltrados.length === 0) {
+                listaProdutos.innerHTML = '<li>Nenhum produto encontrado.</li>';
+            } else {
+                produtosFiltrados.forEach(produto => {
+                    const li = document.createElement('li');
+                    li.textContent = `${produto.nome} - R$ ${produto.preco.toFixed(2)}`;
+                    listaProdutos.appendChild(li);
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Filtrar Produtos por Preço</h2>
+    <label for="precoMinimo">Preço Mínimo:</label>
+    <input type="number" id="precoMinimo" placeholder="Digite o preço mínimo"><br><br>
+
+    <button onclick="filtrarProdutos()">Filtrar</button>
+
+    <ul id="listaProdutos"></ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Pessoa</title>
+    <script>
+        function criarPessoa() {
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            const cidade = document.getElementById('cidade').value;
+
+            if (!nome || !idade || !cidade) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+
+            const pessoa = {
+                nome: nome,
+                idade: idade,
+                cidade: cidade
+            };
+
+            document.getElementById('dadosPessoa').textContent = 
+                `Nome: ${pessoa.nome}, Idade: ${pessoa.idade}, Cidade: ${pessoa.cidade}`;
+        }
+    </script>
+</head>
+<body>
+    <h2>Criar Objeto Pessoa</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome"><br><br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade"><br><br>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade"><br><br>
+
+    <button onclick="criarPessoa()">Criar Pessoa</button><br><br>
+
+    <p id="dadosPessoa"></p>
+</body>
+</html>

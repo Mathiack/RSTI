@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <script>
+        function adicionarTarefa() {
+            const tarefaInput = document.getElementById('tarefa');
+            const tarefa = tarefaInput.value;
+
+            if (tarefa === '') {
+                alert('Digite uma tarefa!');
+                return;
+            }
+
+            const listaTarefas = document.getElementById('listaTarefas');
+            const li = document.createElement('li');
+            li.textContent = tarefa;
+
+            const removerBtn = document.createElement('button');
+            removerBtn.textContent = 'Remover';
+            removerBtn.onclick = function() {
+                listaTarefas.removeChild(li);
+            };
+
+            li.appendChild(removerBtn);
+            listaTarefas.appendChild(li);
+            tarefaInput.value = ''; // Limpar o campo de entrada
+        }
+    </script>
+</head>
+<body>
+    <h2>Lista de Tarefas</h2>
+    <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <ul id="listaTarefas"></ul>
+</body>
+</html>
