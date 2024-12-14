@@ -32,5 +32,15 @@ Usando <a href="https://github.com/Guilherme-Thunder/RSTI/tree/main/RSTI_1/Java"
 ###### 05/09 - 21/12
 
 ### Lógica de Programação🧠
+Exercícios de lógica de programação (importante). Introdução ao Back-End com <a href="https://github.com/Mathiack/RSTI/tree/main/RSTI_2/Portugol">Portugol</a>
+<br><br>
+
 ### Desenvolvimento Web Front-End ⚙
+Desenvolvimento básico com <a href="https://github.com/Mathiack/RSTI/tree/main/RSTI_2/HTML">HTML e CSS</a>, uso de Bootstrap e Wordpress
+<br><br>
+
 ### JavaScript🔧
+Contato com <a href="https://github.com/Mathiack/RSTI/tree/main/RSTI_2/JavaScript">JavaScript</a> no terminal e integrado à sites.
+
+### Turismo Erechim🌎
+Site feito em Worpress no modulo de Desenvolvimento Web. Contém informações sobre a cultura, pontos turisticos e história de Erechim. Veja <a href="https://github.com/Mathiack/RSTI/tree/main/RSTI_2/TurismoErechim">aqui</a>
